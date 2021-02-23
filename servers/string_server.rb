@@ -24,3 +24,11 @@ class ConcatenateUpcaseServer < StringServer
     super([:concat, :upcase])  #Could use :+ instead of concat here
   end
 end
+
+class ConcatenateUpcaseReverseServer < StringServer
+  private
+
+  def initialize
+    super([:concat, :upcase, :reverse])  #Could use :+ instead of concat here
+  end
+end

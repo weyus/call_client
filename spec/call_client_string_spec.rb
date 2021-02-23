@@ -2,7 +2,7 @@ require './spec/spec_helper.rb'
 
 describe CallClient do
   context "String Servers" do
-    %w(concatenate_upcase).each do |server_type|
+    %w(concatenate_upcase concatenate_upcase_reverse).each do |server_type|
       context "happy path for #{server_type}" do
         it "successfully calls #{server_type} server" do
           server_instance = "#{server_type.camelize}Server".constantize.new
