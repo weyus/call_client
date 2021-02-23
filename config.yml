@@ -1,0 +1,18 @@
+#mode can be:
+#  class (local class - based implementation, assumes there is a class with name of "name" value)
+#  network (networked server implementation)
+mode: class
+retries: 3
+
+servers:
+  sum:
+    name: SumServer
+    host: localhost
+    port: 3000
+    operand_type: Integer
+
+  difference:
+    name: DifferenceServer
+    host: localhost
+    port: 3001
+    operand_type: Integer
