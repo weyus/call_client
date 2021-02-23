@@ -1,6 +1,7 @@
 class ArithmeticServer
   def calculate(op1, op2)
     puts "Call #{self.class.name}..." if $0 == 'irb'
+
     op1.send(@operation, op2)
   end
 
